@@ -30,7 +30,7 @@ async def upload_data(request: Request, project_id: str, file: UploadFile,
     )
 
     project = await project_model.get_project_or_create_one(
-        project_id=project_id
+        project_id=project_id    
     )
 
     # validate the file properties

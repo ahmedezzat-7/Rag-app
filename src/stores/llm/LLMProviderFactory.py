@@ -1,5 +1,5 @@
 from .LLMEnums import LLMEnums
-from providers import CoHereProvider,OpenAIProvider
+from .providers import CoHereProvider,OpenAIProvider
 
 class LLMProviderFactory:
     def __init__(self,config: dict):
