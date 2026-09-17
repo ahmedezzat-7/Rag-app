@@ -15,7 +15,7 @@ system_prompt = Template("\n".join([
     "Be precise and concise in your response. Avoid unnecessary information.",
 ]))
 
-#### Document #### 
+#### Document ####
 document_prompt = Template(
     "\n".join([
         "## Document No: $doc_num",
@@ -26,5 +26,8 @@ document_prompt = Template(
 #### Footer ####
 footer_prompt = Template("\n".join([
     "Based only on the above documents, please generate an answer for the user.",
+    "## Question:",
+    "$query", 
+    "",
     "## Answer:",
 ]))
